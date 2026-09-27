@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+
+        <h3>Nuevo Producto</h3>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
+        <label for="category">Categoría:</label>
+        <input type="text" name="category" id="category">
+        <label for="description">Descripción:</label>
+        <textarea type="text" name="description" id="description"></textarea>
+        <label for="price">Precio:</label>
+        <input type="number" name="price" id="price">
+        <label for="stock">Stock:</label>
+        <input type="number" name="stock" id="stock">
+        <label for="available">Disponible:</label>
+        <input type="checkbox" name="available" id="available">
+
+        <button type="submit">Enviar</button>
+
+<%- include('partials/footer.ejs') %>

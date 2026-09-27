@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "nombre": "Lavanda",
+        "categoria": "Aromáticas",
+        "descripcion": "Consola híbrida de Nintendo que permite jugar tanto en modo portátil como conectada a un televisor.",
+        "precio": 649999,
+        "stock": 8,
+        "disponible": true
+    },
+    {
+        "id": 2,
+        "nombre": "Tomate",
+        "categoria": "Plantines",
+        "descripcion": "Consola Nintendo Switch con pantalla OLED, mayor capacidad de almacenamiento y soporte trasero ajustable.",
+        "precio": 529999,
+        "stock": 5,
+        "disponible": true
+    },
+    {
+        "id": 3,
+        "nombre": "Limonero",
+        "categoria": "Frutales",
+        "descripcion": "Versión compacta de Nintendo Switch diseñada exclusivamente para jugar en modo portátil.",
+        "precio": 349999,
+        "stock": 10,
+        "disponible": true
+    }
+]

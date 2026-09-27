@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') %>
+
+   
+<% usuarios.forEach(usuario=> {%>
+        <article>
+            <h4>
+                <%= usuario.nombre %>
+            </h4>
+        </article>
+
+        <% }) %>
+
+
+
+<%- include('partials/footer.ejs') %>
