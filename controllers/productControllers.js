@@ -30,6 +30,30 @@ module.exports = {
         products.push(newProduct)
         productModel.write(products) // ahora guardamos el objeto en el disco correctamente.. es decir convertimos nuestro javascript a texto plano json para que lo lea FS
         res.redirect('/products');
+    },
+
+    editForm: (req, res) => {
+        const products = productModel.read();
+        let id = req.params.id
+        let product = products.find(producto => producto.id == id)
+        res.render("productEdit", { title: "Editar producto", product });
+    },
+
+    editProduct: (req, res) => {
+        let products = productModel.read();
+        products = products.map(product =>
+            product.id == req.params.id ? {
+                ...product,
+                nombre: req.body.name,
+                categoria: req.body.category,
+                descripcion: req.body.description,
+                precio: Number(req.body.price),
+                stock: Number(req.body.stock),
+                disponible: req.body.available === "on"
+            } : product
+        );
+        productModel.write(products);
+        res.redirect("/products");
     }
 }
 

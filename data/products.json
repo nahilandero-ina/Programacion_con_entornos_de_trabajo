@@ -3,8 +3,8 @@
     "id": 1,
     "nombre": "Lavanda",
     "categoria": "Aromáticas",
-    "descripcion": "Consola híbrida de Nintendo que permite jugar tanto en modo portátil como conectada a un televisor.",
-    "precio": 649999,
+    "descripcion": "Modifico descripción y precio del producto :id 1 lavanda.",
+    "precio": 60,
     "stock": 8,
     "disponible": true
   },
@@ -21,8 +21,8 @@
     "id": 3,
     "nombre": "Limonero",
     "categoria": "Frutales",
-    "descripcion": "Versión compacta de Nintendo Switch diseñada exclusivamente para jugar en modo portátil.",
-    "precio": 349999,
+    "descripcion": "Modifico la descripción.",
+    "precio": 1000,
     "stock": 10,
     "disponible": true
   },
@@ -36,12 +36,30 @@
     "disponible": true
   },
   {
-    "id": 1791062030703,  
+    "id": 1791062030703,
     "nombre": "girasol",
     "categoria": "plantin",
     "descripcion": "planta de sol directo.",
     "precio": 100,
     "stock": 100,
     "disponible": true
+  },
+  {
+    "id": 1791121066850,
+    "nombre": "Lavanda",
+    "categoria": "Aromáticas",
+    "descripcion": "Planta originaria de la región mediterránea. Sirve principalmente como remedio natural, relajante.",
+    "precio": 200,
+    "stock": 10,
+    "disponible": false
+  },
+  {
+    "id": 1791121574363,
+    "nombre": "Lavanda",
+    "categoria": "Aromáticas",
+    "descripcion": "Planta originaria de la región mediterránea. Sirve principalmente como remedio natural, relajante.",
+    "precio": 500,
+    "stock": 10,
+    "disponible": false
   }
 ]
