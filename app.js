@@ -4,7 +4,12 @@ const app = express()
 const mainRoutes = require ("./routes/mainRoutes");                             // con esta línea de código estamos conectando/modularizando y poniendo disponible las rutas del main  en nuestro entrypoint
 const productRoutes = require("./routes/productRoutes");
 
+const methodOverride = require("method-override");
+
 const PORT = 3000;
+
+app.use(express.urlencoded({extended:true}))
+app.use(methodOverride("_method"));
 
 app.set("view engine", "ejs");
 app.set("views", "./views");

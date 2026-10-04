@@ -1,16 +1,16 @@
 <%- include('partials/header.ejs') %>
 
-      <h2>Nuestros productos</h2>
+    <h2>Nuestros productos</h2>
     <% products.forEach(producto=> {%>
         <article>
-            <h4>
-                <%= producto.nombre %>
-            </h4>
-            <p>
-                Precio: $<%= producto.precio %>
-            </p>
+            <a href="/products/detail/<%= producto.id %>">
+                <h4>
+                    <%= producto.nombre %>
+                </h4>
+            </a>
+            <p>$ <%= producto.precio %></p>
         </article>
 
         <% }) %>
 
-<%- include('partials/footer.ejs') %>
+            <%- include('partials/footer.ejs') %>

@@ -1,16 +1,25 @@
 <%- include('partials/header.ejs') %>
-    
+
     <h2>Nuestros productos</h2>
-    <% productos.forEach(producto=> { %>
+    
         <article>
-            <a href="/products/detail/<%= producto.id %>">
-                <h4>
-                    <%= producto.nombre %>
-                </h4>
-            </a>
-            <p><%= producto.precio %></p>
+
+            <h2>
+                <%= product.nombre %>
+            </h2>
+
+            <h3>$ <%= product.precio %></h3>
+            <ul>
+                <li><strong>Categoría</strong>: <%= product.categoria %></li>
+                <li><strong>Descripción</strong>: <%= product.descripcion %></li>
+                <li><strong>Stock</strong>: <%= product.stock %></li>
+            </ul>
+
+           
+            
+
         </article>
-        <% }) %>
         
-        
-<%- include('partials/footer.ejs') %>
+
+
+            <%- include('partials/footer.ejs') %>
