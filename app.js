@@ -1,7 +1,8 @@
 const express = require ("express");
 const app = express()
-const mainRoutes = require ("./routes/mainRoutes");                             // con esta línea de código estamos conectando/modularizando y poniendo disponible las rutas del main  en nuestro entrypoint
+const mainRoutes = require ("./routes/mainRoutes");   
 const productRoutes = require("./routes/productRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 const methodOverride = require("method-override");
 
@@ -15,8 +16,9 @@ app.set("view engine", "ejs");
 app.set("views", "./views");
 
 
-app.use("/", mainRoutes)                                                                    // queremos que nuestra app utilice (use) en nuestro inicio/home las rutas disponibes en el archivo mainRoutes.js
+app.use("/", mainRoutes)    
 app.use("/products", productRoutes)
+app.use("/users", userRoutes)
 
 
 app.listen(PORT, ()=>{

@@ -3,27 +3,27 @@
     "id": 1,
     "nombre": "Lavanda",
     "categoria": "Aromáticas",
-    "descripcion": "Modifico descripción y precio del producto :id 1 lavanda.",
-    "precio": 60,
-    "stock": 8,
+    "descripcion": "Pruebo si funciona el botón editar.",
+    "precio": 10,
+    "stock": 2,
     "disponible": true
   },
   {
     "id": 3,
-    "nombre": "Limonero",
+    "nombre": "Flor",
     "categoria": "Frutales",
-    "descripcion": "Modifico la descripción.",
+    "descripcion": "Edito la descripción y cambio el nombre hoy 5 de octubre.",
     "precio": 1000,
     "stock": 10,
     "disponible": true
   },
   {
-    "id": 1790635189636,
-    "nombre": "Girasol",
-    "categoria": "Prueba",
-    "descripcion": "Dos palabras",
+    "id": 1791215948638,
+    "nombre": "Romero",
+    "categoria": "Aromáticas",
+    "descripcion": "Arbusto perenne aromático.",
     "precio": 100,
-    "stock": 1,
+    "stock": 4,
     "disponible": true
   }
 ]

@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %>
+
+    <h3>Nuevo Producto</h3>
+    <form action="/users/newUser" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name">
+        <label for="correo">Correo:</label>
+        <input type="email" name="email" id="email">
+
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <%- include('partials/footer.ejs') %>

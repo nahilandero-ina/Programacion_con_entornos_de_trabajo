@@ -1,0 +1,13 @@
+<%- include('partials/header.ejs') %>
+
+    <h3>Editar usuarios</h3>
+    <form action="/users/editUser/<%= user.id %>?_method=PUT" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" value="<%= user.nombre%>">
+        <label for="correo">Correo:</label>
+        <input type="email" name="email" id="email" value="<%= user.correo%>">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <%- include('partials/footer.ejs') %>
