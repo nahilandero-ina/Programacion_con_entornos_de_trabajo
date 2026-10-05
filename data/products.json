@@ -9,15 +9,6 @@
     "disponible": true
   },
   {
-    "id": 2,
-    "nombre": "Tomate",
-    "categoria": "Plantines",
-    "descripcion": "Consola Nintendo Switch con pantalla OLED, mayor capacidad de almacenamiento y soporte trasero ajustable.",
-    "precio": 529999,
-    "stock": 5,
-    "disponible": true
-  },
-  {
     "id": 3,
     "nombre": "Limonero",
     "categoria": "Frutales",
@@ -34,32 +25,5 @@
     "precio": 100,
     "stock": 1,
     "disponible": true
-  },
-  {
-    "id": 1791062030703,
-    "nombre": "girasol",
-    "categoria": "plantin",
-    "descripcion": "planta de sol directo.",
-    "precio": 100,
-    "stock": 100,
-    "disponible": true
-  },
-  {
-    "id": 1791121066850,
-    "nombre": "Lavanda",
-    "categoria": "Aromáticas",
-    "descripcion": "Planta originaria de la región mediterránea. Sirve principalmente como remedio natural, relajante.",
-    "precio": 200,
-    "stock": 10,
-    "disponible": false
-  },
-  {
-    "id": 1791121574363,
-    "nombre": "Lavanda",
-    "categoria": "Aromáticas",
-    "descripcion": "Planta originaria de la región mediterránea. Sirve principalmente como remedio natural, relajante.",
-    "precio": 500,
-    "stock": 10,
-    "disponible": false
   }
 ]

@@ -8,8 +8,11 @@ router.get("/", productControllers.productsList); // le estamos diciendo qué ru
 
 router.get("/newProduct", productControllers.productForm);
 router.post("/newProduct", productControllers.newProduct);
+
 router.get("/editProduct/:id", productControllers.editForm);
 router.put("/editProduct/:id", productControllers.editProduct);
+
+router.delete("/delete/:id", productControllers.deleteProduct);
 
 
 router.get("/detail/:id", productControllers.productDetail); // las rutas dinámicas pueden causar error.. es preferible que vayan siempre al final

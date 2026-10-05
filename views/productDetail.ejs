@@ -1,25 +1,26 @@
 <%- include('partials/header.ejs') %>
 
-    <h2>Nuestros productos</h2>
-    
-        <article>
 
-            <h2>
-                <%= product.nombre %>
-            </h2>
+    <section>
+        <h2>Nuestros productos</h2>
 
-            <h3>$ <%= product.precio %></h3>
-            <ul>
-                <li><strong>Categoría</strong>: <%= product.categoria %></li>
-                <li><strong>Descripción</strong>: <%= product.descripcion %></li>
-                <li><strong>Stock</strong>: <%= product.stock %></li>
-            </ul>
+        <h3><%= product.nombre %></h3>
 
-           
-            
+        <h2>$ <%= product.precio %></h2>
+        <ul>
+            <li><strong>Categoría</strong>: <%= product.categoria %></li>
+            <li><strong>Descripción</strong>: <%= product.descripcion %></li>
+            <li><strong>Stock</strong>: <%= product.stock %></li>
+        </ul>
+    </section>
 
-        </article>
-        
+    <section>
+        <a href="/editProduct/:id<%=product.id%>"> Editar </a>
+        <form action="/products/delete/<%=product.id%>?_method=DELETE" method="post">
+            <button>Eliminar</button>
+        </form>
+    </section>
 
 
-            <%- include('partials/footer.ejs') %>
+
+    <%- include('partials/footer.ejs') %>

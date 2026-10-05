@@ -1,13 +1,13 @@
 const productModel = require("../models/productModel");
 
 module.exports = {
-    productsList: (req, res) => { // mi 
+    productsList: (req, res) => { 
         const products = productModel.read();
         res.render("productsList", { products, title: "productos" });
     },
     productDetail: (req, res) => {
         let id = req.params.id
-        const products = productModel.read(); // error encontrado
+        const products = productModel.read(); 
         let product = products.find(producto => producto.id == id)
         res.render("productDetail", { title: "Detalle del producto", product })
     },
@@ -16,8 +16,8 @@ module.exports = {
         res.render("productForm", { title: "Nuevo producto" })
     },
 
-    newProduct: (req, res) => { // la función que procesa los datos
-        const products = productModel.read();  //primero tengo que leer el archivo de productos
+    newProduct: (req, res) => { 
+        const products = productModel.read();  
         const newProduct = {
             id: Date.now(),
             nombre: req.body.name,
@@ -28,7 +28,7 @@ module.exports = {
             disponible: req.body.available === "on"
         }
         products.push(newProduct)
-        productModel.write(products) // ahora guardamos el objeto en el disco correctamente.. es decir convertimos nuestro javascript a texto plano json para que lo lea FS
+        productModel.write(products) 
         res.redirect('/products');
     },
 
@@ -52,6 +52,13 @@ module.exports = {
                 disponible: req.body.available === "on"
             } : product
         );
+        productModel.write(products);
+        res.redirect("/products");
+    },
+    deleteProduct: (req, res) => {
+        let products = productModel.read();
+        let id = req.params.id;
+        products = products.filter(product => product.id != id)
         productModel.write(products);
         res.redirect("/products");
     }
