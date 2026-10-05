@@ -15,7 +15,6 @@ app.use(methodOverride("_method"));
 app.set("view engine", "ejs");
 app.set("views", "./views");
 
-
 app.use("/", mainRoutes)    
 app.use("/products", productRoutes)
 app.use("/users", userRoutes)
